@@ -5,5 +5,5 @@ const expected = '{"id":9,"created":1546300800,"userInfo":{"id":1,name":"Hitman"
 test('should return', () => {
   GameSavingLoader.load().then((received) => {
     expect(received).toEqual(expected);
-  }).catch((err) => err);
+  }).catch((error) => error);
 });
